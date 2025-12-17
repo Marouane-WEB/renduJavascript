@@ -1,4 +1,6 @@
 
+
+const avantage1 = document.getElementById("Avantage");
 const shop1 = document.getElementById("shop");
 const service1 = document.getElementById("service");
 const temoins = document.getElementById("temoignage");
@@ -12,12 +14,34 @@ fetch(API_URL)
         console.log('Données récupérées avec succès :', data);
 
         console.log(data.produits);
+       
 
+        displayAvantage(data);
         displayProducts(data);
         displayService(data);
         displayTemoignage(data);
 
     })
+
+    function displayAvantage(data) {
+        let avantages = data.avantagesClients;
+        console.log(avantages);
+        
+        avantages.forEach(avantage => {
+
+            const descris = document.createElement("p");
+            // console.log(avantage);
+            
+           descris.textContent = avantage;
+
+            avantage1.appendChild(descris);
+
+          
+        });
+        
+    }
+
+
 
 function displayProducts(data) {
     let produits = data.produits;
