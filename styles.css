@@ -51,9 +51,14 @@ h2{
 
 .produits{
     width: 30%;
+    
     h3{
         color: #fff;
     }
 
 
+}
+
+.produits:hover{
+    background-color: rgb(130, 130, 166);
 }
