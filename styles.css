@@ -1,0 +1,12 @@
+button{
+ padding: 14px 32px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+
+}
+
+nav-header{
+    display: flex;
+    justify-content: center;
+}
