@@ -21,6 +21,7 @@ body {
 
 
 
+
 ul , menu {
 
     display: flex;
@@ -30,10 +31,11 @@ ul , menu {
 }
 
 .flex{
-    display: flex;
+ display: flex;
     justify-content: center;
     gap: 20px;
     background-color: black;
+    flex-wrap: wrap;
 
     p{
         color: #fff;
@@ -45,4 +47,13 @@ ul , menu {
 
 h2{
     text-align: center;
+}
+
+.produits{
+    width: 30%;
+    h3{
+        color: #fff;
+    }
+
+
 }
